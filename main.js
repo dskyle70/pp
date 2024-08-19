@@ -142,7 +142,6 @@ let IN_symbols=document.getElementById('symbols');
             a[count] = symbols[pickRandom(0,sym-11)];
             count++;
         }
-        return a;
     } else if(v==3||v==4){
         let a=[];
         let count=0;
@@ -171,7 +170,6 @@ let IN_symbols=document.getElementById('symbols');
             a[count] = symbols[pickRandom(0,sym-10)];
             count++;
         }
-        return a;
     }else{
         let a=[];
         let count=0;
@@ -216,9 +214,8 @@ let IN_symbols=document.getElementById('symbols');
             a[count] = symbols[pickRandom(0,sym-1)];
             count++;
         }
-        return a;
     }
-   
+    return a;
 }
 
 function pickRandom(a , x) {
