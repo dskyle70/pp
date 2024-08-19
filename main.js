@@ -81,7 +81,7 @@ function generate() {
             document.getElementById('output').innerText=generated;
         }else if (strength==3||strength==4) {
             let generated='';
-            for (let i = 0; i < Math.ceil(length); i++) {
+            for (let i = 0; i < Math.ceil(length-2); i++) {
                let array=selections(1);
                let arL=array.length;
                generated+=array[pickRandom(0,arL-1)];
