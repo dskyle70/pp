@@ -189,7 +189,7 @@ let IN_symbols=document.getElementById('symbols');
             count++;
         }
         if (IN_symbols.checked==true) {
-            a[count] = symbols[pickRandom(0,sym-1)];
+            a[count] = symbols[pickRandom(0 , sym-1)];
             count++;
         }
         if (IN_numbers.checked==true) {
