@@ -114,8 +114,10 @@ let IN_lwCase=document.getElementById('lwCase');
 let IN_upCase=document.getElementById('upCase');
 let IN_numbers=document.getElementById('numbers');
 let IN_symbols=document.getElementById('symbols');
+let a=[];
+let count=0;
+
     if (v==1||v==2) {
-        let a=[];
         let count=0;
    
         if (IN_upCase.checked==true) {
@@ -143,9 +145,6 @@ let IN_symbols=document.getElementById('symbols');
             count++;
         }
     } else if(v==3||v==4){
-        let a=[];
-        let count=0;
-   
         if (IN_upCase.checked==true) {
             a[count] = (pickRandom(1 , 10) > (8-v))?upperCaseChars[pickRandom(0,21)] : upperCaseVowels[pickRandom(0,4)];
             count++;
@@ -171,9 +170,6 @@ let IN_symbols=document.getElementById('symbols');
             count++;
         }
     }else{
-        let a=[];
-        let count=0;
-   
         if (IN_upCase.checked==true) {
             a[count] = (pickRandom(1 , 10) > 1)?upperCaseChars[pickRandom(0,21)] : upperCaseVowels[pickRandom(0,4)];
             count++;
