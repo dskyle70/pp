@@ -9,8 +9,8 @@ let upperCaseChars = [];
          upperCaseChars[i] = lowerCaseChars[i].toUpperCase();
         }
 
-let symbols = ['%','@','{','}','#','_','*','/','!','$','?','&'];
-
+let symbols = ['_','@','=','#','/','}','*','/','!','$','?','&','{','<','>'];
+let sym=15;
 let numbers = ['0','1','2','3','4','5','6','7','8','9']
 
 let IN_lwCase=document.getElementById('lwCase');
@@ -139,7 +139,7 @@ let IN_symbols=document.getElementById('symbols');
             count++;
         }
         if (IN_symbols.checked==true) {
-            a[count] = symbols[pickRandom(0,11)];
+            a[count] = symbols[pickRandom(0,sym-11)];
             count++;
         }
         return a;
@@ -160,7 +160,7 @@ let IN_symbols=document.getElementById('symbols');
             count++;
         }
         if (IN_symbols.checked==true) {
-            a[count] = symbols[pickRandom(0,11)];
+            a[count] = symbols[pickRandom(0,sym-1)];
             count++;
         }
         if (IN_numbers.checked==true) {
@@ -168,7 +168,7 @@ let IN_symbols=document.getElementById('symbols');
             count++;
         }
         if (IN_symbols.checked==true) {
-            a[count] = symbols[pickRandom(0,11)];
+            a[count] = symbols[pickRandom(0,sym-1)];
             count++;
         }
         return a;
@@ -189,7 +189,7 @@ let IN_symbols=document.getElementById('symbols');
             count++;
         }
         if (IN_symbols.checked==true) {
-            a[count] = symbols[pickRandom(0,11)];
+            a[count] = symbols[pickRandom(0,sym-1)];
             count++;
         }
         if (IN_numbers.checked==true) {
@@ -197,7 +197,7 @@ let IN_symbols=document.getElementById('symbols');
             count++;
         }
         if (IN_symbols.checked==true) {
-            a[count] = symbols[pickRandom(0,11)];
+            a[count] = symbols[pickRandom(0,sym-1)];
             count++;
         }
         if (IN_numbers.checked==true) {
@@ -205,7 +205,7 @@ let IN_symbols=document.getElementById('symbols');
             count++;
         }
         if (IN_symbols.checked==true) {
-            a[count] = symbols[pickRandom(0,11)];
+            a[count] = symbols[pickRandom(0,sym-1)];
             count++;
         }
         if (IN_numbers.checked==true) {
@@ -213,7 +213,7 @@ let IN_symbols=document.getElementById('symbols');
             count++;
         }
         if (IN_symbols.checked==true) {
-            a[count] = symbols[pickRandom(0,11)];
+            a[count] = symbols[pickRandom(0,sym-1)];
             count++;
         }
     }
