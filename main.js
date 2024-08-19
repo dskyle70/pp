@@ -216,6 +216,7 @@ let IN_symbols=document.getElementById('symbols');
             a[count] = symbols[pickRandom(0,sym-1)];
             count++;
         }
+        return a;
     }
    
 }
