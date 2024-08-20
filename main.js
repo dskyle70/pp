@@ -65,7 +65,7 @@ function generate() {
            generated+=(pickRandom(1,10)>5)?d:generated;
         }
         generated=generated.slice(0,length);
-        document.getElementById('output').innerText=generated;2
+        document.getElementById('output').innerText=generated;
         }else if(strength==2){
             let generated='';
             for (let i = 0; i < Math.ceil(length/2); i++) {
@@ -77,6 +77,7 @@ function generate() {
             for (let i = 0; i < 5; i++) {
                generated+=(pickRandom(1,10)>5)?d:generated;
             }
+            generated=generated.replace(/,/g,'');
             generated=generated.slice(0,length);
             document.getElementById('output').innerText=generated;
         }else if (strength==3||strength==4) {
@@ -90,6 +91,7 @@ function generate() {
             for (let i = 0; i < 5; i++) {
                generated+=(pickRandom(1,10)>5)?d:generated;
             }
+            generated=generated.replace(/,/g,'');
             generated=generated.slice(0,length);
             document.getElementById('output').innerText=generated;
         }else{
@@ -105,6 +107,7 @@ function generate() {
                 generated=generated.split(0,pickRandom(0,length));
                generated+=(pickRandom(1,10)>5)?d:generated;
             }
+            generated=generated.replace(/,/g,'');
             generated=generated.slice(0,length);
             document.getElementById('output').innerText=generated;
         }
