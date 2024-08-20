@@ -124,8 +124,17 @@ input[type=checkbox]{
   }
 }
 @media only screen and (max-width:768px) {
+    *{
+        font-size: smaller;
+    }
     body{
         overflow-x: hidden;
+    }
+    h1{
+        font-size: x-large;
+    }
+    p{
+        font-size: large;
     }
     main{
         width: 100%;
@@ -135,8 +144,12 @@ input[type=checkbox]{
         width: 95%;
     }
     button b a{
-        top: 85px;
+        top: 50px;
         right: 15px;
         padding: 10px;
+        font-size: small;
+    }
+    .value-length label{
+        font-size: large;
     }
 }
