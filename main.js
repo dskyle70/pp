@@ -229,5 +229,17 @@ function LCM(num1, num2) {
 function HCF(num1,num2) {
     return (num1*num2)/LCM(num1,num2);
 }
+function resize() {
+    
+    let wh=parseInt(window.innerHeight);
+    if(wh>655){
+         let ih=parseInt(document.getElementById('cont').style.height)
+    let mt=(wh-ih)/2;
+    document.getElementById('cont').style.marginTop=mt+'px';
+
+    }
+   
+}
+
 updateSliderRange();
 controlChecks();
